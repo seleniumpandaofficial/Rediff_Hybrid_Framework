@@ -228,7 +228,7 @@
           <version>3.0.0-M9</version>
           <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>C:\Users\autom\eclipse-workspace\REDIFF_HYBRID_FRAMEWORK\src\test\resources\testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
         </plugin>

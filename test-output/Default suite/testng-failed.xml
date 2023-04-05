@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyRediffLoginWithValidUsernameAndValidPassword" invocation-numbers="2"/>
+          <include name="verifyRediffLoginWithValidUsernameAndValidPassword"/>
         </methods>
       </class> <!-- com.rediff.qa.testcases.LoginTest -->
     </classes>

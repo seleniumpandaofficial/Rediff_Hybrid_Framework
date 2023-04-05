@@ -30,7 +30,7 @@ public class LoginTest extends TestBase{
 	@Test(priority = 1, dataProvider = "RediffExcelDataWithDataProvider", dataProviderClass = SupplyTestData.class)
 	public void verifyRediffLoginWithValidUsernameAndValidPassword(String username, String password) throws Exception {
 		
-		Thread.sleep(1000);
+		
 		driver.findElement(By.id("login1")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.className("signinbtn")).click();
@@ -43,7 +43,7 @@ public class LoginTest extends TestBase{
 	@Test(priority = 2)
 	public void verifyRediffLoginWithInvalidUsernameAndInvalidPassword() throws Exception {
 
-		Thread.sleep(1000);
+		
 		driver.findElement(By.id("login1")).sendKeys(Utilities.generateEmailWithTimeStamp());
 		driver.findElement(By.id("password")).sendKeys(dataprop.getProperty("invalidPassword"));
 		driver.findElement(By.className("signinbtn")).click();
@@ -58,7 +58,7 @@ public class LoginTest extends TestBase{
 	@Test(priority = 3)
 	public void verifyRediffLoginWithValidUsernameAndInvalidPassword() throws Exception {
 
-		Thread.sleep(1000);
+		
 		driver.findElement(By.id("login1")).sendKeys(prop.getProperty("validUsername"));
 		driver.findElement(By.id("password")).sendKeys(dataprop.getProperty("invalidPassword"));
 		driver.findElement(By.className("signinbtn")).click();
@@ -73,7 +73,7 @@ public class LoginTest extends TestBase{
 	@Test(priority = 4)
 	public void verifyRediffLoginWithEmptyUsernameAndValidPassword() throws Exception {
 
-		Thread.sleep(1000);
+		
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("validPassword"));
 		driver.findElement(By.className("signinbtn")).click();
 		Alert alert = driver.switchTo().alert();

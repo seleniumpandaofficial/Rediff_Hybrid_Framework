@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Rediff Hybrid Automation Suite]">
+  <test thread-count="5" verbose="0" name="Rediff Testcases(failed)">
+    <classes>
+      <class name="com.rediff.qa.testcases.CreateAccountTest">
+        <methods>
+          <include name="enterAllValidFields"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.rediff.qa.testcases.CreateAccountTest -->
+      <class name="com.rediff.qa.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyRediffLoginWithValidUsernameAndValidPassword" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.rediff.qa.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Rediff Testcases(failed) -->
+</suite> <!-- Failed suite [Rediff Hybrid Automation Suite] -->

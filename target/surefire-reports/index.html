@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Rediff_Hybrid_Automation_Suite">
+              <span class="suite-name border-failed">Rediff Hybrid Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Rediff_Hybrid_Automation_Suite">
+                    <span>C:\Users\autom\eclipse-workspace\REDIFF_HYBRID_FRAMEWORK\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Rediff_Hybrid_Automation_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Rediff_Hybrid_Automation_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Rediff_Hybrid_Automation_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Rediff_Hybrid_Automation_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Rediff_Hybrid_Automation_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Rediff_Hybrid_Automation_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Rediff_Hybrid_Automation_Suite" class="hide-methods failed suite-Rediff_Hybrid_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Rediff_Hybrid_Automation_Suite -->
+                      <a href="#" panel-name="suite-Rediff_Hybrid_Automation_Suite" class="show-methods failed suite-Rediff_Hybrid_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Rediff_Hybrid_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Rediff_Hybrid_Automation_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Hybrid_Automation_Suite" title="com.rediff.qa.testcases.CreateAccountTest" hash-for-method="enterAllValidFields">enterAllValidFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Hybrid_Automation_Suite" title="com.rediff.qa.testcases.LoginTest" hash-for-method="verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda2@rediffmail.com, Donkey@123)">verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda2@rediffmail.com, Donkey@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Rediff_Hybrid_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Rediff_Hybrid_Automation_Suite" class="hide-methods passed suite-Rediff_Hybrid_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Rediff_Hybrid_Automation_Suite -->
+                      <a href="#" panel-name="suite-Rediff_Hybrid_Automation_Suite" class="show-methods passed suite-Rediff_Hybrid_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Rediff_Hybrid_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Rediff_Hybrid_Automation_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Hybrid_Automation_Suite" title="com.rediff.qa.testcases.LoginTest" hash-for-method="verifyRediffLoginWithValidUsernameAndValidPassword(Mohamedboudguig@rediffmail.com, Medbdg0707@)">verifyRediffLoginWithValidUsernameAndValidPassword(Mohamedboudguig@rediffmail.com, Medbdg0707@)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Hybrid_Automation_Suite" title="com.rediff.qa.testcases.LoginTest" hash-for-method="verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda@rediffmail.com, Selenium@123)">verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda@rediffmail.com, Selenium@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Rediff_Hybrid_Automation_Suite" title="com.rediff.qa.testcases.LoginTest" hash-for-method="verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda1@rediffmail.com, Donkey@123)">verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda1@rediffmail.com, Donkey@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Rediff_Hybrid_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Rediff_Hybrid_Automation_Suite" class="panel Rediff_Hybrid_Automation_Suite">
+          <div class="suite-Rediff_Hybrid_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rediff.qa.testcases.CreateAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterAllValidFields">
+                  </a> <!-- enterAllValidFields -->
+                  <span class="method-name">enterAllValidFields</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.rediff.qa.testcases.CreateAccountTest.enterAllValidFields(CreateAccountTest.java:64)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Hybrid_Automation_Suite-class-failed -->
+          <div class="suite-Rediff_Hybrid_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rediff.qa.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda2@rediffmail.com, Donkey@123)">
+                  </a> <!-- verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda2@rediffmail.com, Donkey@123) -->
+                  <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword</span>
+                  <span class="parameters">(seleniumpanda2@rediffmail.com, Donkey@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.rd_logout&quot;}
+  (Session info: chrome=111.0.5563.147)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b91b1a4ed665033e2beec1ecee348c1f, findElement {using=class name, value=rd_logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\autom\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56223/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b91b1a4ed665033e2beec1ecee348c1f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.rediff.qa.testcases.LoginTest.verifyRediffLoginWithValidUsernameAndValidPassword(LoginTest.java:38)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Hybrid_Automation_Suite-class-failed -->
+          <div class="suite-Rediff_Hybrid_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rediff.qa.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRediffLoginWithValidUsernameAndValidPassword(Mohamedboudguig@rediffmail.com, Medbdg0707@)">
+                  </a> <!-- verifyRediffLoginWithValidUsernameAndValidPassword(Mohamedboudguig@rediffmail.com, Medbdg0707@) -->
+                  <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword</span>
+                  <span class="parameters">(Mohamedboudguig@rediffmail.com, Medbdg0707@)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda@rediffmail.com, Selenium@123)">
+                  </a> <!-- verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda@rediffmail.com, Selenium@123) -->
+                  <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword</span>
+                  <span class="parameters">(seleniumpanda@rediffmail.com, Selenium@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda1@rediffmail.com, Donkey@123)">
+                  </a> <!-- verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda1@rediffmail.com, Donkey@123) -->
+                  <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword</span>
+                  <span class="parameters">(seleniumpanda1@rediffmail.com, Donkey@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Rediff_Hybrid_Automation_Suite-class-passed -->
+        </div> <!-- panel Rediff_Hybrid_Automation_Suite -->
+        <div panel-name="test-xml-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\autom\eclipse-workspace\REDIFF_HYBRID_FRAMEWORK\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Rediff Hybrid Automation Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Rediff Testcases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rediff.qa.testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.rediff.qa.testcases.CreateAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Rediff Testcases --&gt;
+&lt;/suite&gt; &lt;!-- Rediff Hybrid Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Rediff Hybrid Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Rediff Testcases (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Rediff Hybrid Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Rediff Hybrid Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Rediff_Hybrid_Automation_Suite');
+function tableData_Rediff_Hybrid_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyRediffLoginWithValidUsernameAndValidPassword')
+data.setCell(0, 2, 'com.rediff.qa.testcases.LoginTest')
+data.setCell(0, 3, 11602);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyRediffLoginWithValidUsernameAndValidPassword')
+data.setCell(1, 2, 'com.rediff.qa.testcases.LoginTest')
+data.setCell(1, 3, 7824);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyRediffLoginWithValidUsernameAndValidPassword')
+data.setCell(2, 2, 'com.rediff.qa.testcases.LoginTest')
+data.setCell(2, 3, 6064);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyRediffLoginWithValidUsernameAndValidPassword')
+data.setCell(3, 2, 'com.rediff.qa.testcases.LoginTest')
+data.setCell(3, 3, 5700);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'enterAllValidFields')
+data.setCell(4, 2, 'com.rediff.qa.testcases.CreateAccountTest')
+data.setCell(4, 3, 2384);
+window.suiteTableData['Rediff_Hybrid_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Rediff_Hybrid_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <div id="times-div-Rediff_Hybrid_Automation_Suite">
+              </div> <!-- times-div-Rediff_Hybrid_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Rediff Hybrid Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Rediff_Hybrid_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rediff.qa.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda@rediffmail.com, Selenium@123)</span>
+                <span class="method-start">6164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11865 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12517 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda1@rediffmail.com, Donkey@123)</span>
+                <span class="method-start">16451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword(seleniumpanda2@rediffmail.com, Donkey@123)</span>
+                <span class="method-start">29210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41494 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRediffLoginWithValidUsernameAndValidPassword(Mohamedboudguig@rediffmail.com, Medbdg0707@)</span>
+                <span class="method-start">45393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">53218 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rediff.qa.testcases.CreateAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">enterAllValidFields</span>
+                <span class="method-start">58077 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">60461 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
