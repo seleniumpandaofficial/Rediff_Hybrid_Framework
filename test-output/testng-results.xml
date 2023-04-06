@@ -1,25 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-05T02:39:56Z" name="Default suite" finished-at="2023-04-05T02:40:03Z" duration-ms="6930">
+  <suite started-at="2023-04-06T02:44:46Z" name="Rediff Hybrid Automation Suite" finished-at="2023-04-06T02:45:47Z" duration-ms="61445">
     <groups>
     </groups>
-    <test started-at="2023-04-05T02:39:56Z" name="Default test" finished-at="2023-04-05T02:40:03Z" duration-ms="6930">
-      <class name="com.rediff.qa.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@3fc9504b]" started-at="2023-04-05T02:39:56Z" name="setUp" finished-at="2023-04-05T02:40:02Z" duration-ms="6229" status="PASS">
+    <test started-at="2023-04-06T02:44:46Z" name="Rediff Testcases" finished-at="2023-04-06T02:45:47Z" duration-ms="61445">
+      <class name="com.rediff.qa.testcases.CreateAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@740d2e78]" started-at="2023-04-06T02:45:41Z" name="setUp" finished-at="2023-04-06T02:45:45Z" duration-ms="4765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRediffLoginWithInvalidUsernameAndInvalidPassword()[pri:2, instance:com.rediff.qa.testcases.LoginTest@3fc9504b]" started-at="2023-04-05T02:40:02Z" name="verifyRediffLoginWithInvalidUsernameAndInvalidPassword" finished-at="2023-04-05T02:40:03Z" duration-ms="568" status="PASS">
+        <test-method signature="verifyCreateAccountByEnteringAllValidFields()[pri:1, instance:com.rediff.qa.testcases.CreateAccountTest@740d2e78]" started-at="2023-04-06T02:45:45Z" name="verifyCreateAccountByEnteringAllValidFields" finished-at="2023-04-06T02:45:47Z" duration-ms="1683" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.rediff.qa.testcases.CreateAccountTest.verifyCreateAccountByEnteringAllValidFields(CreateAccountTest.java:86)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRediffLoginWithInvalidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@3fc9504b]" started-at="2023-04-05T02:40:03Z" name="tearDown" finished-at="2023-04-05T02:40:03Z" duration-ms="122" status="PASS">
+        </test-method> <!-- verifyCreateAccountByEnteringAllValidFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@740d2e78]" started-at="2023-04-06T02:45:47Z" name="tearDown" finished-at="2023-04-06T02:45:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.rediff.qa.testcases.CreateAccountTest -->
+      <class name="com.rediff.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:44:46Z" name="setUp" finished-at="2023-04-06T02:44:54Z" duration-ms="7225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUsernameAndValidPassword(java.lang.String, java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:44:54Z" name="verifyRediffLoginWithValidUsernameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-06T02:44:59Z" duration-ms="5164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpanda@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:44:59Z" name="tearDown" finished-at="2023-04-06T02:44:59Z" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:44:59Z" name="setUp" finished-at="2023-04-06T02:45:03Z" duration-ms="4015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUsernameAndValidPassword(java.lang.String, java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:03Z" name="verifyRediffLoginWithValidUsernameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-06T02:45:07Z" duration-ms="4622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpanda1@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Donkey@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:07Z" name="tearDown" finished-at="2023-04-06T02:45:08Z" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:08Z" name="setUp" finished-at="2023-04-06T02:45:12Z" duration-ms="4256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUsernameAndValidPassword(java.lang.String, java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:12Z" name="verifyRediffLoginWithValidUsernameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-06T02:45:19Z" duration-ms="6663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chowdhurygs@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shajlee1@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:19Z" name="tearDown" finished-at="2023-04-06T02:45:19Z" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:19Z" name="setUp" finished-at="2023-04-06T02:45:23Z" duration-ms="3883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUsernameAndValidPassword(java.lang.String, java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:23Z" name="verifyRediffLoginWithValidUsernameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-06T02:45:30Z" duration-ms="7394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mohamedboudguig@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Medbdg0707@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:30Z" name="tearDown" finished-at="2023-04-06T02:45:30Z" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:30Z" name="setUp" finished-at="2023-04-06T02:45:34Z" duration-ms="3618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUsernameAndValidPassword(java.lang.String, java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:34Z" name="verifyRediffLoginWithValidUsernameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-06T02:45:40Z" duration-ms="6740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[homa_rahimi@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Winter2021?]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@b7c4869]" started-at="2023-04-06T02:45:40Z" name="tearDown" finished-at="2023-04-06T02:45:41Z" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.rediff.qa.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Rediff Testcases -->
+  </suite> <!-- Rediff Hybrid Automation Suite -->
 </testng-results>

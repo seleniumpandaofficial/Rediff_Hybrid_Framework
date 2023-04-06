@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rediff.qa.testcases.LoginTest">
+      <class name="com.rediff.qa.testcases.CreateAccountTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyRediffLoginWithValidUsernameAndValidPassword"/>
+          <include name="tearDown"/>
+          <include name="verifyCreateAccountByEnteringAllValidFields"/>
         </methods>
-      </class> <!-- com.rediff.qa.testcases.LoginTest -->
+      </class> <!-- com.rediff.qa.testcases.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

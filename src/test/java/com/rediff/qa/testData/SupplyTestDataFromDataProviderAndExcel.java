@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-public class SupplyTestData {
+public class SupplyTestDataFromDataProviderAndExcel {
 	
 	public static FileInputStream ip;
 	public static XSSFWorkbook workbook;
@@ -21,14 +21,13 @@ public class SupplyTestData {
 				           {"Mohamedboudguig@rediffmail.com", "Medbdg0707@"},
 				           {"seleniumpanda1@rediffmail.com", "Donkey@123"},
 				           {"seleniumpanda2@rediffmail.com", "Selenium@123"}};
-		
 		return data;
-		
 		}
+	
 	
 	@DataProvider (name = "RediffExcelDataWithDataProvider")
 	 public static Object[][] excelSheetDataSuppy() throws Exception {
-		Object[][] data = SupplyTestData.getRediffTestDataFromExcelSheet("Login");
+		Object[][] data = SupplyTestDataFromDataProviderAndExcel.getRediffTestDataFromExcelSheet("Login");
 		return data;
 	}
 	
