@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Rediff Testcases(failed)">
     <classes>
+      <class name="com.rediff.qa.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyRediffLoginWithValidUsernameAndValidPassword" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.rediff.qa.testcases.LoginTest -->
       <class name="com.rediff.qa.testcases.CreateAccountTest">
         <methods>
           <include name="setUp"/>
